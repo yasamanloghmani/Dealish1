@@ -25,7 +25,7 @@ function SidebarCollapse () {
     }
     var expanded = $('#sidebar-container');
     var collapsed = $('#sidebar-container');
-    if(expanded.hasClass('sidebar-expanded')){
+     if(expanded.hasClass('sidebar-expanded')){
         $('#main-content').css("margin-left", "230px");
     }
     else if( collapsed.hasClass('sidebar-collapsed')){
@@ -34,6 +34,8 @@ function SidebarCollapse () {
     else {
         $('#main-content').css("margin-left", "230px");
     }
+
+    
     // Collapse/Expand icon
     $('#collapse-icon').toggleClass('fa-angle-double-left fa-angle-double-right');
 }
