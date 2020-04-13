@@ -14,3 +14,6 @@ def signup(request):
             return redirect('deals_index')
     context = {'form': form} 
     return render(request, 'registration/signup.html', context)
+
+def about(request):
+    return render(request, 'base.html')
