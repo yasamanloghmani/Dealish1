@@ -15,5 +15,5 @@ def signup(request):
     context = {'form': form} 
     return render(request, 'registration/signup.html', context)
 
-def about(request):
-    return render(request, 'base.html')
+def main(request):
+    return render(request, 'mainpage.html')
