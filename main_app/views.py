@@ -20,3 +20,12 @@ def main(request):
 
 def favorits(request):
     return render(request, 'favorits.html')
+
+def restaurant(request):
+    return render(request, 'restaurant.html')
+
+def profile(request):
+    return render(request, 'profile.html')
+
+def about(request):
+    return render(request, 'about.html')
