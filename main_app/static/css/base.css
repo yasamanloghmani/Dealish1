@@ -214,7 +214,15 @@ ul>li {
     color: #5ce1e6;
 }
 
+/* FAVORITS PAGE CSS */
 
+  .nav-tabs > li {
+      padding: 20px;
+  }
+
+  #exTab2 h3 {
+    padding : 5px 15px;
+  }
 @media(max-width : 767px){
 
     .navbar1 {

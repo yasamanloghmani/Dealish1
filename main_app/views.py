@@ -17,3 +17,6 @@ def signup(request):
 
 def main(request):
     return render(request, 'mainpage.html')
+
+def favorits(request):
+    return render(request, 'favorits.html')
