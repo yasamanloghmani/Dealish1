@@ -168,14 +168,14 @@ ul>li {
 
 /* MAIN PAGE CSS */
 
-.map-container{
+#map-container-google-1{
     overflow:hidden;
     position:relative;
     border: 1px solid #020060;
     border-radius: 5px;
     margin-bottom: 20px;
 }
-.map-container iframe{
+#map-container-google-1 iframe{
     left:0;
     top:0;
     height:500px;
@@ -209,20 +209,77 @@ ul>li {
 .btn{
     background-color: #020060;
     color: white;
+    margin-top: 10px;
 }
 .fa-angle-double-right{
     color: #5ce1e6;
 }
 
-/* FAVORITS PAGE CSS */
+/* FAVORITES PAGE CSS */
 
-  .nav-tabs > li {
-      padding: 20px;
-  }
 
-  #exTab2 h3 {
-    padding : 5px 15px;
-  }
+
+/* RESTAURANT PAGE CSS */
+
+.restaurant-header{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #020060!important;
+    border-radius: 5px;
+    height: 100px;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    -webkit-box-shadow: -10px 0px 13px -7px #020060, 10px 0px 13px -7px #020060, 1px 0px 15px 0px rgba(0,0,0,0); 
+    box-shadow: -10px 0px 13px -7px #020060, 10px 0px 13px -7px #020060, 1px 0px 15px 0px rgba(0,0,0,0);
+}
+
+.restaurant-header>p{
+    color: #ff6689;
+}
+
+.info-container {
+    margin-top: 20px;
+}
+.info-container .card-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid #020060;
+    border-radius: 5px;
+}
+.info-container>div{
+    width: 100%;
+
+}
+.card-column{
+    padding:15px;
+    width: 49%;
+}
+.card-column:first-child{
+    border-right: 1px solid #020060 ;
+}
+.info-container>div>.card{
+    width: 100%;
+    display: block;
+    border:none
+}
+.card-body>iframe {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    height: auto;
+}
+.btn:hover {
+    color: white;
+    background-color: #4d51ff;
+}
+.restaurant-info .btn {
+    margin-top: 10px;
+}
+.deals>ul>li>div {
+float: left;
+}
+
 @media(max-width : 767px){
 
     .navbar1 {
@@ -247,6 +304,16 @@ ul>li {
     }
     .card{
         width: 100%;
+    }
+    .info-container .card-body{
+        display: block;
+    }
+    .card-column{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .card-column:first-child{
+        border-right: none ;
     }
 
 }

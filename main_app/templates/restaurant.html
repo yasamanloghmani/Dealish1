@@ -1,0 +1,71 @@
+
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<header class="restaurant-header">
+    <h1>CIBO</h1>
+    <p>Italian Wine Bar</p>
+</header>
+<main>
+    <div class="info-container">
+        <div class="restaurant-info">
+            <div class="card text-center ">
+                
+                <div class="card-body">
+                    <div class="card-column"> 
+                        <p>Address : 846 Bayview Ave</p>
+                    <p>Phone Number : 746029873</p>
+                    
+                    <button type="submit" class="btn" value="Like">
+                        <i class="fas fa-thumbs-up fa-fw mr-3"></i>810 people Like
+                    </button>
+                    <!-- <i class="fas fa-thumbs-down"></i> -->
+                    <br>
+                    <hr>
+                    <a href="#" class="btn"><span class="fas fa-tasks fa-fw mr-3"></span>Add to Favorites</a>
+                    <a href="#" class="btn"><span class="fas fa-share fa-fw mr-3"></span>Share the restaurant</a>
+                    </div>
+                    <div class="card-column">
+                        <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                          style="border:0" allowfullscreen></iframe>
+                          <div>
+                            <a href="#" class="btn"><i class="fas fa-map-marker-alt fa-fw mr-3"></i>Get Direction</a>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="deals-review">
+            <div class="card text-center ">
+                <div class="card-body">
+            
+                <div class="deals card-column">
+                    <ul>
+                        <li><div>Wine
+                            <p>MONDAY TO FRIDAY</p>
+                        </div><div>10$</div></li>
+                        <li>pizza</li>
+                        <li>pizza</li>
+                        <li>pizza</li>
+                    </ul>
+                </div>
+                <div class="review card-column">
+                    <h3>Add Review</h3>
+                    <form action="" method="post">
+                        <!-- Django requires the following for security purposes -->
+                        {% csrf_token %}
+                        <!-- <table> -->
+                          <!-- Render the inputs inside of <tr>s & <td>s -->
+                          <!-- {{ form.as_table }} -->
+                        <!-- </table> -->
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <input type="submit" value="Submit" class="btn submit">
+                      </form>
+                </div>
+                </div>
+        </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
